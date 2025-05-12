@@ -9,7 +9,7 @@
   - [Cài đặt và sử dụng](#cài-đặt-và-sử-dụng)
 - [Tính năng của thư viện](#tính-năng-của-thư-viện)
 - [Tài liệu tham khảo](#tài-liệu-tham-khảo)
-- [Tổng hợp giá trị của từng thanh ghi trong cấu hình Mpu6050](#tổng-hợp-giá-trị-của-từng-thanh-ghi-trong-cấu-hình-Mpu6050)
+- [Tổng hợp giá trị của thanh ghi trong cấu hình Mpu6050](#tổng-hợp-giá-trị-của-thanh-ghi-trong-cấu-hình-Mpu6050)
 
 # Giới thiệu
 MPU6050 là một mô-đun cảm biến tích hợp được sản xuất bởi InvenSense. Nó kết hợp gia tốc kế 3 trục và con quay hồi chuyển 3 trục trong cùng một chip – tạo thành một hệ thống đo chuyển động 6 bậc tự do (6-DOF) chỉ trong một module nhỏ gọn. Không chỉ đơn thuần đo các giá trị gia tốc và quay, MPU6050 còn tích hợp một cảm biến nhiệt độ giúp nhận được dữ liệu nhiệt độ theo nhiệt độ môi trường và một bộ xử lý chuyển động số (DMP) giúp xử lý dữ liệu thô thành các giá trị góc nghiêng và chuyển động chính xác hơn. Module này thì được ứng dụng nhiều trong thực tế với một số ứng dụng tiêu biểu như sau:
@@ -98,7 +98,7 @@ int16_t Mpu6050_read(uint8_t reg)
  ```c
 void Mpu6050_init(uint8_t conf, uint8_t smplrt_div, uint8_t accel_conf, uint8_t gryo_conf, uint8_t interupt, uint8_t PWR);
 ```  
--> [Tổng hợp giá trị của từng thanh ghi trong cấu hình Mpu6050](#tổng-hợp-giá-trị-của-từng-thanh-ghi-trong-cấu-hình-Mpu6050)
+-> [Tổng hợp giá trị của thanh ghi trong cấu hình Mpu6050](#tổng-hợp-giá-trị-của-thanh-ghi-trong-cấu-hình-Mpu6050)
 
 - Hàm đọc và trả về giá trị nhiệt độ
 ```c
@@ -131,7 +131,7 @@ void Mpu6050_read_angles_moves(bool calibration_mode, int so_lan, float *roll, f
 - [Datasheet MPU6050](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf)
 - [Datasheet Register Map](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf)
   
-# Tổng hợp giá trị của từng thanh ghi trong cấu hình Mpu6050
+# Tổng hợp giá trị của thanh ghi trong cấu hình Mpu6050
 ```c
 MPU6050
 ////////////////////////// 0x19: sample rate //////////////////////////
