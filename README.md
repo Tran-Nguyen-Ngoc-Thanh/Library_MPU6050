@@ -130,6 +130,7 @@ void Mpu6050_read_angles_moves(bool calibration_mode, int so_lan, float *roll, f
 # Tài liệu tham khảo
 - [Datasheet MPU6050](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf)
 - [Datasheet Register Map](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf)
+- Datasheet I2C: [/1/](https://www.analog.com/en/resources/analog-dialogue/articles/i2c-communication-protocol-understanding-i2c-primer-pmbus-and-smbus.html), [/2/](https://www.analog.com/en/resources/technical-articles/i2c-primer-what-is-i2c-part-1.html)
   
 # Tổng hợp giá trị của thanh ghi trong cấu hình Mpu6050
 ```c
